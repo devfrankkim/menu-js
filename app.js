@@ -109,7 +109,7 @@ const displayMenuBttons = () => {
   );
   // (5) ["all", "breakfast", "lunch", "shakes", "quarantine"]
 
-  // ======== join the menus ========
+  // ======== join the dynamic menus to the button ========
   const categoryBtns = categories
     .map((item) => {
       return `<button type="button" class="filter-btn" data-id="${item}">${item}</button>`;
@@ -140,7 +140,7 @@ const displayMenuBttons = () => {
   });
 };
 
-// load items
+// ======= load items =======
 window.addEventListener("DOMContentLoaded", () => {
   displayMenuItems(menu);
   displayMenuBttons();
